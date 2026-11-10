@@ -2,6 +2,8 @@
 
 A working record of what it took to make the Marketing the Arts class website with an AI model, written so someone else can repeat it for their own site.
 
+In a hurry? The same method is on seven slides: [build-your-own-website.pdf](build-your-own-website.pdf).
+
 ## The short version
 
 The AI did the typing. The humans did the deciding. The site came out well because the brief was specific, the source content was real, and a person reviewed the result before it went anywhere.

@@ -17,6 +17,7 @@ Live site: https://mikefklein.github.io/AI-Arts-Marketing/
 | `404.html` | The "wrong alley" page for broken links |
 | `styles.css` | The look of every page |
 | `favicon.svg` | The small tote bag icon |
+| `build-your-own-website.pdf` / `.pptx` | A seven-slide guide to making your own site, downloadable from the Backstage page |
 | `HOW-WE-BUILT-THIS.md` | How this was built with an AI model, and how to do it yourself |
 
 ## Editing
