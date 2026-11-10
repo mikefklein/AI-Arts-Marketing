@@ -2,7 +2,7 @@
 
 The website for the graduate course Marketing the Arts at American University.
 
-Live site: https://mikefklein.github.io/marketing-the-arts/
+Live site: https://mikefklein.github.io/AI-Arts-Marketing/
 
 ## What's here
 

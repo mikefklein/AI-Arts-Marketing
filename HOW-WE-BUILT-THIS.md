@@ -82,10 +82,10 @@ This list is the real lesson. None of it can be skipped.
 ## Putting it online with GitHub Pages
 
 1. Create a free account at github.com.
-2. Click **New repository**. Name it (for example `marketing-the-arts`), set it to **Public**, and create it.
+2. Click **New repository**. Name it (ours is `AI-Arts-Marketing`), set it to **Public**, and create it.
 3. Click **uploading an existing file**, drag in every file from the site folder (the `.html` pages, `styles.css`, `favicon.svg` and `.nojekyll`), and commit.
 4. Go to **Settings**, then **Pages**. Under "Build and deployment", choose **Deploy from a branch**, pick `main` and `/ (root)`, and save.
-5. Wait a minute or two. The site appears at `https://YOUR-USERNAME.github.io/marketing-the-arts/`.
+5. Wait a minute or two. The site appears at `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`.
 6. To change the site later, edit a page on GitHub (the pencil icon) or upload a new copy. The site updates on its own.
 
 If your AI tool is connected to GitHub, as ours was by the end, it can do steps 2 to 5 for you. You still own the account and the repository.
