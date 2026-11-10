@@ -5,253 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marketing the Arts | AMGT 671 at American University</title>
 <meta name="description" content="Marketing the Arts (AMGT 671) is a graduate course in American University's Arts Management program. Learn how to fill the room for the art you love.">
-<meta property="og:title" content="Marketing the Arts | AMGT 671">
-<meta property="og:description" content="Great art deserves a crowd. A graduate course in American University's Arts Management program.">
+<meta property="og:title" content="Marketing the Arts | AMGT 671 at American University">
+<meta property="og:description" content="Marketing the Arts (AMGT 671) is a graduate course in American University's Arts Management program. Learn how to fill the room for the art you love.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #111111;
-    --paper: #fbf6e9;
-    --yellow: #ffe234;
-    --pink: #ff4fa3;
-    --wall: #1c1b1a;
-    --pole: #3a3936;
-    --tape: rgba(244, 232, 190, 0.82);
-    --display: "Anton", "Impact", "Arial Narrow Bold", sans-serif;
-    --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
-    --type: "Special Elite", "Courier New", monospace;
-    --marker: "Permanent Marker", "Comic Sans MS", cursive;
-    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
-
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-
-  body {
-    margin: 0;
-    font-family: var(--body);
-    font-size: 1.125rem; /* 18px: comfortably above the 12pt minimum */
-    line-height: 1.6;
-    color: var(--ink);
-    background-color: var(--wall);
-    /* a brick-ish wall with a lamppost running down the middle */
-    background-image:
-      linear-gradient(90deg, transparent calc(50% - 70px), #2b2a28 calc(50% - 70px), var(--pole) calc(50% - 20px), #4a4945 50%, var(--pole) calc(50% + 20px), #2b2a28 calc(50% + 70px), transparent calc(50% + 70px)),
-      repeating-linear-gradient(0deg, transparent 0 46px, rgba(255,255,255,.035) 46px 48px),
-      var(--grain);
-  }
-
-  a { color: inherit; text-decoration-thickness: .12em; text-underline-offset: .18em; }
-  a:hover { text-decoration-thickness: .22em; }
-  a:focus-visible, button:focus-visible {
-    outline: 4px solid var(--ink);
-    outline-offset: 3px;
-    box-shadow: 0 0 0 8px var(--yellow);
-  }
-
-  .skip {
-    position: absolute; left: 1rem; top: -5rem;
-    background: var(--yellow); color: var(--ink);
-    padding: .75rem 1rem; font-weight: 800; z-index: 10;
-  }
-  .skip:focus { top: 1rem; }
-
-  main {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 3rem 1rem 1rem;
-    display: grid;
-    gap: 3.25rem;
-  }
-
-  /* ---------- the flyers ---------- */
-  .flyer {
-    position: relative;
-    padding: clamp(1.5rem, 5vw, 3rem);
-    background-color: var(--paper);
-    background-image: var(--grain);
-    box-shadow: 0 2px 0 rgba(0,0,0,.25), 0 18px 30px -12px rgba(0,0,0,.75);
-    transform: rotate(var(--tilt, 0deg));
-  }
-  .flyer:nth-of-type(odd)  { --tilt: -0.7deg; }
-  .flyer:nth-of-type(even) { --tilt: 0.6deg; }
-
-  /* strips of masking tape holding each flyer up */
-  .flyer::before, .flyer::after {
-    content: "";
-    position: absolute;
-    top: -16px;
-    width: 110px; height: 34px;
-    background: var(--tape);
-    box-shadow: 0 1px 3px rgba(0,0,0,.35);
-  }
-  .flyer::before { left: 8%;  transform: rotate(-5deg); }
-  .flyer::after  { right: 8%; transform: rotate(4deg); }
-
-  .yellow { background-color: var(--yellow); }
-  .pink   { background-color: var(--pink); }
-  .black  { background-color: #121212; color: #ffffff; }
-
-  h1, h2 {
-    font-family: var(--display);
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: .95;
-    letter-spacing: .01em;
-    margin: 0 0 1rem;
-  }
-  h1 { font-size: clamp(3.6rem, 17vw, 8.5rem); }
-  h2 { font-size: clamp(2.4rem, 9vw, 4.25rem); }
-  h3 { font-family: var(--body); font-weight: 800; font-size: 1.25rem; margin: 0 0 .25rem; }
-  p  { margin: 0 0 1.1rem; }
-  p:last-child { margin-bottom: 0; }
-
-  .label {
-    font-family: var(--type);
-    font-size: 1rem;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    margin: 0 0 .75rem;
-  }
-  .scrawl {
-    font-family: var(--marker);
-    font-size: clamp(1.35rem, 4.5vw, 1.9rem);
-    line-height: 1.25;
-    transform: rotate(-2deg);
-  }
-
-  /* ---------- hero ---------- */
-  .hero { text-align: center; padding-top: clamp(2.25rem, 6vw, 3.5rem); }
-  .hero .tote { width: min(74%, 360px); height: auto; margin: 0 auto .5rem; display: block; }
-  .hero h1 span { display: block; }
-  .hero .knockout {
-    background: var(--ink); color: var(--yellow);
-    padding: .08em .12em 0; margin: .06em auto; width: fit-content;
-    transform: rotate(-1.5deg);
-  }
-  .hero .scrawl { margin: 1.25rem auto 1.5rem; max-width: 22ch; }
-  .deets {
-    list-style: none; padding: 0; margin: 0 0 1.75rem;
-    display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem;
-    font-family: var(--type); font-size: 1.05rem;
-  }
-  .deets li { border: 2px solid var(--ink); padding: .4rem .75rem .25rem; background: rgba(255,255,255,.35); }
-  .btns { display: flex; flex-wrap: wrap; justify-content: center; gap: .9rem; }
-  .btn {
-    display: inline-block;
-    font-family: var(--display); font-size: 1.4rem; text-transform: uppercase; letter-spacing: .03em;
-    text-decoration: none;
-    padding: .65rem 1.25rem .55rem;
-    border: 3px solid var(--ink);
-    background: var(--ink); color: #fff;
-    box-shadow: 5px 5px 0 var(--pink);
-  }
-  .btn.alt { background: #fff; color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
-  @media (prefers-reduced-motion: no-preference) {
-    .btn { transition: transform .12s ease; }
-    .btn:hover { transform: translate(-2px, -2px) rotate(-1deg); }
-  }
-
-  /* ---------- welcome ---------- */
-  .welcome p:first-of-type { font-size: 1.35rem; font-weight: 600; line-height: 1.45; }
-
-  /* ---------- outcomes ---------- */
-  .outcomes ol { list-style: none; counter-reset: n; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1.1rem; }
-  .outcomes li { counter-increment: n; display: grid; grid-template-columns: 3.25rem 1fr; gap: .9rem; align-items: start; }
-  .outcomes li::before {
-    content: counter(n);
-    font-family: var(--display); font-size: 2.6rem; line-height: 1;
-    background: var(--ink); color: var(--pink);
-    text-align: center; padding: .3rem 0 .15rem;
-    transform: rotate(-4deg);
-  }
-
-  /* ---------- lineup ---------- */
-  .lineup h2 { color: var(--yellow); }
-  .lineup .label { color: #fff; }
-  .gigs { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-  .gigs li {
-    display: grid; grid-template-columns: 4.75rem 1fr; gap: 1rem;
-    padding: .95rem 0;
-    border-top: 2px dashed rgba(255,255,255,.45);
-  }
-  .gigs li:last-child { border-bottom: 2px dashed rgba(255,255,255,.45); }
-  .gigs .date { font-family: var(--type); font-size: 1.05rem; color: var(--yellow); padding-top: .35rem; }
-  .gigs .act { font-family: var(--display); font-size: clamp(1.45rem, 5vw, 2rem); line-height: 1.08; text-transform: uppercase; letter-spacing: .015em; display: block; }
-  .gigs .with { display: block; font-size: 1.05rem; margin-top: .3rem; }
-  .gigs .with a { color: var(--yellow); }
-  .gigs .off .act { color: #d6d6d6; }
-  .fineprint { font-family: var(--type); font-size: 1rem; margin-top: 1.5rem; }
-
-  /* ---------- make ---------- */
-  .makes { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
-  @media (min-width: 640px) { .makes { grid-template-columns: 1fr 1fr; } }
-  .makes div { border: 3px solid var(--ink); padding: 1.1rem 1.15rem; background: #fff; }
-  .makes div:nth-child(odd)  { transform: rotate(-.8deg); }
-  .makes div:nth-child(even) { transform: rotate(.7deg); }
-  .makes p { font-size: 1.0625rem; }
-
-  /* ---------- playlist ---------- */
-  .playlist { display: grid; gap: 1.5rem; align-items: center; }
-  @media (min-width: 640px) { .playlist { grid-template-columns: 200px 1fr; } }
-  .playlist svg { width: 200px; max-width: 100%; height: auto; margin: 0 auto; display: block; }
-
-  /* ---------- host ---------- */
-  .host .scrawl { margin-top: 1.5rem; max-width: 30ch; }
-
-  /* ---------- tear-off tabs ---------- */
-  .takeone { padding-bottom: 0; text-align: center; }
-  .takeone h2 { margin-bottom: .5rem; }
-  .tabs {
-    list-style: none; margin: 2rem calc(-1 * clamp(1.5rem, 5vw, 3rem)) 0; padding: 0;
-    display: flex;
-    border-top: 3px dashed var(--ink);
-  }
-  .tabs li { flex: 1; border-left: 3px dashed var(--ink); }
-  .tabs li:first-child { border-left: 0; }
-  .tabs a {
-    display: flex; align-items: center; justify-content: flex-start;
-    writing-mode: vertical-rl; text-orientation: sideways;
-    min-height: 15rem; width: 100%;
-    padding: 1.1rem .4rem;
-    font-family: var(--type); font-size: 1.05rem; line-height: 1.2;
-    text-decoration: none;
-    margin: 0 auto;
-  }
-  .tabs a strong { font-family: var(--display); font-weight: 400; font-size: 1.5rem; text-transform: uppercase; letter-spacing: .03em; margin-bottom: .6rem; }
-  .tabs a:hover { background: var(--ink); color: var(--yellow); }
-  @media (prefers-reduced-motion: no-preference) {
-    .tabs li { transform-origin: top center; transition: transform .18s ease; }
-    .tabs li:hover { transform: rotate(2.5deg); }
-    .tabs li:nth-child(even):hover { transform: rotate(-2.5deg); }
-  }
-
-  footer {
-    max-width: 780px; margin: 0 auto; padding: 3rem 1.25rem 4rem;
-    color: #f2f2f2; font-size: 1rem; text-align: center;
-  }
-  footer p { background: var(--wall); display: inline-block; padding: .35rem .75rem; margin: 0 0 .5rem; }
-  footer a { color: var(--yellow); }
-
-  @media (max-width: 480px) {
-    .flyer { --tilt: 0deg !important; }
-    .flyer::before, .flyer::after { width: 80px; }
-    .gigs li { grid-template-columns: 3.75rem 1fr; gap: .75rem; }
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="in">
+    <a class="brand" href="index.html"><img src="favicon.svg" alt="" width="44" height="44"><span>Marketing <span>the Arts</span></span></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="lineup.html">The Lineup</a></li><li><a href="studio.html">The Studio</a></li><li><a href="mixtape.html">The Mixtape</a></li><li><a href="backstage.html">Backstage</a></li><li><a href="box-office.html">Box Office</a></li></ul>
+    </nav>
+  </div>
+</header>
 
 <main id="main">
 
-  <!-- 1. HERO -->
-  <header class="flyer yellow hero">
+<div class="ticker" aria-hidden="true"><div>Great art deserves a crowd &nbsp;&#9733;&nbsp; Thursdays at Katzen &nbsp;&#9733;&nbsp; Bring a friend &nbsp;&#9733;&nbsp; Empty rooms need not apply &nbsp;&#9733;&nbsp; AMGT 671 &nbsp;&#9733;&nbsp; Great art deserves a crowd &nbsp;&#9733;&nbsp; Thursdays at Katzen &nbsp;&#9733;&nbsp; Bring a friend &nbsp;&#9733;&nbsp; Empty rooms need not apply &nbsp;&#9733;&nbsp; AMGT 671 &nbsp;&#9733;&nbsp; Great art deserves a crowd &nbsp;&#9733;&nbsp; Thursdays at Katzen &nbsp;&#9733;&nbsp; Bring a friend &nbsp;&#9733;&nbsp; Empty rooms need not apply &nbsp;&#9733;&nbsp; AMGT 671 &nbsp;&#9733;&nbsp; Great art deserves a crowd &nbsp;&#9733;&nbsp; Thursdays at Katzen &nbsp;&#9733;&nbsp; Bring a friend &nbsp;&#9733;&nbsp; Empty rooms need not apply &nbsp;&#9733;&nbsp; AMGT 671 &nbsp;&#9733;&nbsp; Great art deserves a crowd &nbsp;&#9733;&nbsp; Thursdays at Katzen &nbsp;&#9733;&nbsp; Bring a friend &nbsp;&#9733;&nbsp; Empty rooms need not apply &nbsp;&#9733;&nbsp; AMGT 671 &nbsp;&#9733;&nbsp; Great art deserves a crowd &nbsp;&#9733;&nbsp; Thursdays at Katzen &nbsp;&#9733;&nbsp; Bring a friend &nbsp;&#9733;&nbsp; Empty rooms need not apply &nbsp;&#9733;&nbsp; AMGT 671 &nbsp;&#9733;&nbsp; </div></div>
+<div class="wrap">
+  <section class="flyer yellow hero" aria-labelledby="home-h">
     <svg class="tote" viewBox="0 0 300 350" role="img" aria-labelledby="tote-title tote-desc" xmlns="http://www.w3.org/2000/svg">
       <title id="tote-title">Marketing the Arts logo</title>
       <desc id="tote-desc">A worn, slightly stained canvas tote bag with frayed straps. Screen-printed on the front is a black starburst that reads Marketing the Arts, with a pink paint splat peeking out behind it.</desc>
@@ -304,137 +83,56 @@
         </g>
       </g>
     </svg>
-
     <p class="label">AMGT 671 &nbsp;/&nbsp; American University &nbsp;/&nbsp; Arts Management</p>
-    <h1>
-      <span>Marketing</span>
-      <span class="knockout">the Arts</span>
-    </h1>
+    <h1 id="home-h"><span>Marketing</span><span class="knockout">the Arts</span></h1>
     <p class="scrawl">Great art deserves a crowd. Come learn how to draw one.</p>
     <ul class="deets" aria-label="Course details">
       <li>Thursdays, 5:30&ndash;8 p.m.</li>
       <li>Katzen Arts Center, Room 112</li>
       <li>Graduate course</li>
     </ul>
-    <div class="btns">
-      <a class="btn" href="#lineup">See the lineup</a>
-      <a class="btn alt" href="#take-one">Get in touch</a>
+    <div class="btns" style="justify-content:center">
+      <a class="btn" href="lineup.html">See the lineup</a>
+      <a class="btn alt" href="box-office.html">Get in touch</a>
     </div>
-  </header>
+  </section>
 
-  <!-- 2. WELCOME -->
-  <section class="flyer welcome" aria-labelledby="welcome-h">
+  <section class="flyer" aria-labelledby="welcome-h">
     <p class="label">Read me. I'm taped here for a reason.</p>
     <h2 id="welcome-h">Welcome to Marketing the Arts</h2>
-    <p>A brilliant exhibition or a gutsy new play can still end up playing to an empty room. Marketing is how you fix that, and this course shows you how.</p>
+    <p class="lede">A brilliant exhibition or a gutsy new play can still end up playing to an empty room. Marketing is how you fix that, and this course shows you how.</p>
     <p>You&rsquo;ll learn the fundamentals of marketing, explore what makes arts and culture marketing its own creative animal, and get comfortable with market research. You&rsquo;ll also learn to build strategies that grow audiences and increase accessibility.</p>
     <p>Through case studies, readings, lively discussion, and hands-on exercises using real organizations and this week&rsquo;s headlines, you&rsquo;ll practice turning first-time visitors into loyal fans.</p>
     <p>You&rsquo;ll leave with practical skills you can use right away and a new way of seeing every poster, email, and Instagram post that crosses your path.</p>
   </section>
+</div>
 
-  <!-- 3. OUTCOMES -->
-  <section class="flyer pink outcomes" aria-labelledby="outcomes-h">
-    <p class="label">No experience required. Curiosity mandatory.</p>
-    <h2 id="outcomes-h">What you&rsquo;ll walk out with</h2>
-    <ol>
-      <li><div><h3>The fundamentals, for real</h3><p>Product, price, place, promotion. You&rsquo;ll know the marketing mix well enough to explain it at a party, and to actually use it on Monday.</p></div></li>
-      <li><div><h3>A playbook built for the arts</h3><p>Selling a season is not selling sneakers. You&rsquo;ll develop best practices that fit museums, theaters, orchestras, and the scrappy collective down the street.</p></div></li>
-      <li><div><h3>A feel for arts audiences</h3><p>Who shows up, who doesn&rsquo;t, and why. You&rsquo;ll learn to describe the people in the seats (and the ones you wish were there) with real nuance.</p></div></li>
-      <li><div><h3>Sharp analysis skills</h3><p>You&rsquo;ll size up the competition and run a SWOT analysis that leads somewhere: a marketing plan with a point of view.</p></div></li>
-      <li><div><h3>Research you can trust</h3><p>Surveys, segments, metrics. You&rsquo;ll practice the research and evaluation methods that let you say &ldquo;here&rsquo;s what the data shows&rdquo; and mean it.</p></div></li>
-    </ol>
-  </section>
-
-  <!-- 4. LINEUP -->
-  <section class="flyer black lineup" id="lineup" aria-labelledby="lineup-h">
-    <p class="label">Fall 2026 &nbsp;/&nbsp; Fourteen sessions &nbsp;/&nbsp; One scene</p>
-    <h2 id="lineup-h">The lineup</h2>
-    <p>Every week has a headliner. Several come with special guests: working arts marketers who drop in to tell you how it really goes.</p>
-    <ol class="gigs">
-      <li><span class="date">Sept 3</span><span><span class="act">Welcome + the marketing mix</span></span></li>
-      <li><span class="date">Sept 10</span><span><span class="act">The marketing mindset: product and experience</span></span></li>
-      <li><span class="date">Sept 17</span><span><span class="act">Branding and positioning</span><span class="with">with special guest <a href="https://www.linkedin.com/in/robertduray/">Robert DuRay</a></span></span></li>
-      <li><span class="date">Sept 24</span><span><span class="act">Market research and audience inclusivity</span></span></li>
-      <li><span class="date">Oct 1</span><span><span class="act">Target audiences and segmentation</span><span class="with">with special guest <a href="https://www.linkedin.com/in/ceylonmitchell/">Dr. Ceylon Mitchell II</a></span></span></li>
-      <li><span class="date">Oct 8</span><span><span class="act">How pricing matters</span><span class="with">with special guest <a href="https://www.linkedin.com/in/stevenbryandawson/">Steven Dawson</a></span></span></li>
-      <li><span class="date">Oct 15</span><span><span class="act">Positioning and competitive analysis</span></span></li>
-      <li><span class="date">Oct 20</span><span><span class="act">Field trip</span><span class="with">A Tuesday morning at the United States Holocaust Memorial Museum</span></span></li>
-      <li><span class="date">Oct 29</span><span><span class="act">Promotion and content strategy</span><span class="with">with special guest <a href="https://www.linkedin.com/in/nicole-kang-ferraiolo-9022a226/">Nikki Kang Ferraiolo</a></span></span></li>
-      <li><span class="date">Nov 5</span><span><span class="act">Place (distribution)</span><span class="with">with guest lecturer Ximena Varela</span></span></li>
-      <li><span class="date">Nov 12</span><span><span class="act">The communications mix</span><span class="with">with special guest <a href="https://www.linkedin.com/in/raymundflandez/">Raymund Flandez</a></span></span></li>
-      <li><span class="date">Nov 19</span><span><span class="act">Budgeting and resource allocation</span></span></li>
-      <li class="off"><span class="date">Nov 26</span><span><span class="act">Dark for Thanksgiving</span><span class="with">Official assignment: rest.</span></span></li>
-      <li><span class="date">Dec 3</span><span><span class="act">Metrics and analytics</span></span></li>
-      <li><span class="date">Dec 10</span><span><span class="act">The marketing plan</span></span></li>
-    </ol>
-    <p class="fineprint">Lineup subject to change, like all good festivals. Enrolled students: Canvas has the final word.</p>
-  </section>
-
-  <!-- 5. WHAT YOU'LL MAKE -->
-  <section class="flyer" aria-labelledby="make-h">
-    <p class="label">Less cramming. More making.</p>
-    <h2 id="make-h">What you&rsquo;ll make</h2>
-    <p>No final exam. You pick a real arts organization, study it all semester, and build the kind of work you can show a future boss.</p>
-    <div class="makes">
-      <div><h3>Your own website</h3><p>You are a brand too. You&rsquo;ll build a personal site and keep sharpening it as your marketing chops grow.</p></div>
-      <div><h3>A public voice</h3><p>LinkedIn posts and journal entries that get you thinking out loud and start building your arts management profile.</p></div>
-      <div><h3>Three deep dives</h3><p>Product and brand. Place, price, and positioning. Audience engagement and a full SWOT. All on the organization you chose.</p></div>
-      <div><h3>A communications plan</h3><p>The finale. Everything you&rsquo;ve learned, turned into a plan your organization could actually pick up and run with.</p></div>
-    </div>
-  </section>
-
-  <!-- 6. PLAYLIST -->
-  <section class="flyer yellow" aria-labelledby="listen-h">
-    <div class="playlist">
-      <svg viewBox="0 0 200 130" role="img" aria-labelledby="tape-title" xmlns="http://www.w3.org/2000/svg">
-        <title id="tape-title">A hand-labeled cassette mixtape</title>
-        <rect x="4" y="4" width="192" height="122" rx="8" fill="#111"/>
-        <rect x="18" y="16" width="164" height="70" rx="4" fill="#fbf6e9"/>
-        <path d="M26 30 H174 M26 42 H174" stroke="#111" stroke-width="1.5"/>
-        <rect x="52" y="50" width="96" height="28" rx="14" fill="#111"/>
-        <circle cx="70" cy="64" r="9" fill="#fbf6e9"/><circle cx="130" cy="64" r="9" fill="#fbf6e9"/>
-        <circle cx="70" cy="64" r="3" fill="#111"/><circle cx="130" cy="64" r="3" fill="#111"/>
-        <path d="M40 126 L52 98 H148 L160 126 Z" fill="#2c2c2c"/>
-        <circle cx="66" cy="113" r="4" fill="#fbf6e9"/><circle cx="134" cy="113" r="4" fill="#fbf6e9"/>
-        <rect x="18" y="16" width="164" height="8" fill="#ff4fa3"/>
-      </svg>
-      <div>
-        <p class="label">Side A: the class mixtape</p>
-        <h2 id="listen-h">What We&rsquo;re Listening To</h2>
-        <p>Every good scene has a soundtrack. This is ours: the songs that get us through readings, rewrites, and the walk to Katzen.</p>
-        <p><a class="btn" href="https://open.spotify.com/playlist/5YQu3lpuCeACfL2SSGRNXg?si=zMprnbpyS7uG2UL-7SvnpA">Play it on Spotify</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. HOST -->
-  <section class="flyer host" aria-labelledby="host-h">
-    <p class="label">Your host for the evening</p>
-    <h2 id="host-h">Marisa Klein</h2>
-    <p>Marisa teaches Marketing the Arts as adjunct faculty in American University&rsquo;s Arts Management program. Expect a room run like a good opening night: prepared, generous, and a little bit electric.</p>
-    <p>The house rules are simple. Everyone here is a valued part of the room. Your experience and perspective make the conversation better. Nobody is asked to speak for an entire identity. We hold each other to curiosity and kindness.</p>
-    <p class="scrawl">Bring questions. Bring opinions. Bring that poster you can&rsquo;t stop thinking about.</p>
-  </section>
-
-  <!-- 8. TEAR-OFF TABS -->
-  <section class="flyer pink takeone" id="take-one" aria-labelledby="take-h">
-    <p class="label">Interested? Good.</p>
-    <h2 id="take-h">Take one</h2>
-    <p>Tear off a tab. Marisa is happy to talk with prospective students about the course.</p>
-    <ul class="tabs">
-      <li><a href="mailto:mklein@american.edu?subject=Marketing%20the%20Arts%20(AMGT%20671)"><strong>Email Marisa</strong> mklein@american.edu</a></li>
-      <li><a href="https://www.american.edu/cas/arts-management/"><strong>The program</strong> AU Arts Management</a></li>
-      <li><a href="#lineup"><strong>The lineup</strong> Fourteen sessions</a></li>
-      <li><a href="https://open.spotify.com/playlist/5YQu3lpuCeACfL2SSGRNXg?si=zMprnbpyS7uG2UL-7SvnpA"><strong>The mixtape</strong> What We&rsquo;re Listening To</a></li>
-    </ul>
-  </section>
-
+<div class="wrap wide" style="padding-top:0">
+  <div class="block-head">
+    <h2 id="block-h">Walk the block</h2><br>
+    <p>Five stops. Take them in any order. Nobody&rsquo;s checking tickets.</p>
+  </div>
+  <ul class="block" aria-labelledby="block-h">
+    <li><a class="c-black" href="lineup.html"><span class="no">Stop 1 / The venue</span><span class="place">The Lineup</span><span class="what">Fourteen sessions, five special guests, one field trip. See who&rsquo;s playing and when.</span><span class="go">Check the bill &rarr;</span></a></li>
+    <li><a href="studio.html"><span class="no">Stop 2 / The workshop</span><span class="place">The Studio</span><span class="what">What you&rsquo;ll learn and what you&rsquo;ll make, including a plan a real organization could use.</span><span class="go">See the work &rarr;</span></a></li>
+    <li><a class="c-pink" href="mixtape.html"><span class="no">Stop 3 / The record shop</span><span class="place">The Mixtape</span><span class="what">What We&rsquo;re Listening To: the class playlist. Press play and stay a while.</span><span class="go">Drop the needle &rarr;</span></a></li>
+    <li><a href="backstage.html"><span class="no">Stop 4 / Crew only</span><span class="place">Backstage</span><span class="what">Meet your host, read the house rules, and find out how this site got made.</span><span class="go">Slip in &rarr;</span></a></li>
+    <li><a class="c-yellow" href="box-office.html"><span class="no">Stop 5 / The window</span><span class="place">Box Office</span><span class="what">Questions answered, and a tab to tear off when you&rsquo;re ready to talk.</span><span class="go">Step up &rarr;</span></a></li>
+  </ul>
+</div>
 </main>
 
-<footer>
-  <p>AMGT 671 Marketing the Arts &middot; American University &middot; Fall 2026</p><br>
-  <p>The brand was chosen by the class. The site was built with an AI model as a live class demo, then checked by humans.</p>
+<footer class="site-foot">
+  <div class="in">
+    <div>
+      <p class="mark">Marketing the Arts</p>
+      <p>AMGT 671 &middot; Arts Management &middot; American University &middot; Fall 2026</p>
+      <p>The brand was chosen by the class. The site was built with an AI model, then checked by humans. <a href="backstage.html#how">See how</a>.</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul><li><a href="index.html">Home</a></li><li><a href="lineup.html">The Lineup</a></li><li><a href="studio.html">The Studio</a></li><li><a href="mixtape.html">The Mixtape</a></li><li><a href="backstage.html">Backstage</a></li><li><a href="box-office.html">Box Office</a></li></ul>
+    </nav>
+  </div>
 </footer>
-
 </body>
 </html>

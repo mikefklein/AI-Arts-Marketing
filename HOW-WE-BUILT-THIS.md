@@ -36,11 +36,35 @@ If you are using a chat window with no file access, the same request looks like 
 
 1. **Read the sources.** The brief, the syllabus and the lecture talking points. It could not open the Google Form quiz, so it worked from the brand summary in the brief.
 2. **Sorted the content for the audience.** The syllabus is written for enrolled students. The site is for prospective ones. So grading rubrics, late policies and university boilerplate stayed out. Topics, guests, projects and the welcome went in.
-3. **Turned the look into concrete design choices.** "A flyer on a lamppost" became: a dark wall with a pole down the middle, paper flyers held up with masking tape and tilted a little, photocopy grain, a gig-poster lineup for the schedule, and tear-off tabs at the bottom for contact links.
+3. **Turned the look into concrete design choices.** "A flyer on a lamppost" became: a dark wall with a pole down the middle, paper flyers held up with masking tape and tilted a little, photocopy grain, a gig-poster lineup for the schedule, and tear-off tabs for contact links.
 4. **Drew the logo in code.** The tote bag is an SVG drawing written by hand in the page, with stains, stitching and a screen-printed starburst. No image generator and no stock art.
 5. **Wrote the copy.** The welcome text is the instructor's, word for word. Everything else was rewritten from the syllabus in the brand voice.
 6. **Built in the accessibility rules.** Body text is 18 pixels (about 13.5 point). The smallest text is 16 pixels (12 point). Text is near-black on paper, yellow or pink, or white and yellow on black, all above the WCAG AA contrast ratio of 4.5 to 1. Both images have text descriptions. There is a skip link, visible keyboard focus, and animation switches off for people who ask their device to reduce motion.
 7. **Checked its own work.** It opened the page in a real browser at desktop and phone widths, took screenshots, and fixed what it saw: a logo that was too faded to read, a label that broke oddly, a headline that said "stapled" on a flyer that was taped.
+
+## Round two: the feedback that changed it
+
+The first version was one long page. The feedback, in full:
+
+> Site needs to be multi page. Feel less like a single html graphic and more like a place to visit. Let's really punch this up. But the vibe and content is great.
+
+That was enough. The AI took "a place to visit" literally and rebuilt the site as a city block with six stops:
+
+| Page | The place | What moved there |
+| --- | --- | --- |
+| Home | The lamppost | The hero flyer, the welcome, and a wall of mini flyers that link to every stop |
+| The Lineup | The venue | The schedule under marquee lights, the guests, and how a class night goes |
+| The Studio | The workshop | What you learn, what you make, and the arc of the semester |
+| The Mixtape | The record shop | What We're Listening To, with a player on the page |
+| Backstage | Crew only | The instructor, the house rules, and how the site was made |
+| Box Office | The window | Questions and answers, and the tear-off contact tabs |
+
+Each stop has its own wall (brick, plywood, caution tape, a yellow ticket window), a "you are here" sign, and a "next stop" button, so there is always somewhere to go. New content came from the syllabus: the questions and answers page draws on the attendance, materials, AI and late-work policies.
+
+Two lessons from this round:
+
+- **Say what is working as well as what is not.** "The vibe and content is great" told the AI what to keep. Without it, a rebuild can throw out the good parts.
+- **Feedback about a feeling is fine.** "More like a place to visit" is not a technical instruction, and it did not need to be.
 
 ## What a human still has to check
 
@@ -49,8 +73,9 @@ This list is the real lesson. None of it can be skipped.
 - **Facts.** Are the dates, room, guest names and links right? The AI copied them from the syllabus, but syllabi change.
 - **Permission.** Guest speakers are named and linked. Do they know they are on a public page? Is the instructor happy to have an email address listed?
 - **Voice.** Does it sound like the class? A few lines were invented to fit the tone, such as the instructor blurb and the playlist intro. Rewrite anything that does not sound true.
-- **Claims.** The page says there is no final exam, based on the grading table. Confirm it.
-- **Links the AI could not test.** The build environment could not reach the Spotify playlist or the American University program page, so those two links were not clicked. Click them.
+- **Claims.** The Box Office page says the semester ends with a communications plan in exam week, not a sit-down exam. That is read from the schedule and grading table. Confirm it.
+- **Links the AI could not test.** The build environment could not reach Spotify or the American University website. The playlist link, the player on the Mixtape page, and the Arts Management program link were not seen working. Click them.
+- **The syllabus itself.** Two tables in the syllabus give different due dates for the same assignments. The site avoids assignment dates for that reason. A person has to decide which table is right.
 - **Accessibility with real tools.** Run the published page through WAVE (wave.webaim.org) and try it with only a keyboard.
 - **Disclosure.** The footer says the site was built with AI and checked by people. Decide whether that wording is how the class wants to say it.
 
@@ -58,10 +83,12 @@ This list is the real lesson. None of it can be skipped.
 
 1. Create a free account at github.com.
 2. Click **New repository**. Name it (for example `marketing-the-arts`), set it to **Public**, and create it.
-3. Click **uploading an existing file**, drag in `index.html`, `favicon.svg` and `.nojekyll`, and commit.
+3. Click **uploading an existing file**, drag in every file from the site folder (the `.html` pages, `styles.css`, `favicon.svg` and `.nojekyll`), and commit.
 4. Go to **Settings**, then **Pages**. Under "Build and deployment", choose **Deploy from a branch**, pick `main` and `/ (root)`, and save.
 5. Wait a minute or two. The site appears at `https://YOUR-USERNAME.github.io/marketing-the-arts/`.
-6. To change the site later, edit `index.html` on GitHub (the pencil icon) or upload a new copy. The page updates on its own.
+6. To change the site later, edit a page on GitHub (the pencil icon) or upload a new copy. The site updates on its own.
+
+If your AI tool is connected to GitHub, as ours was by the end, it can do steps 2 to 5 for you. You still own the account and the repository.
 
 ## What made the difference
 
@@ -74,6 +101,6 @@ This list is the real lesson. None of it can be skipped.
 
 ## What this cost
 
-- Money: nothing for hosting. The AI tool is the only possible cost, and a free tier can do a one-page site.
-- Time: about one working session, most of it the AI's. Budget an hour of human review.
+- Money: nothing for hosting. The AI tool is the only possible cost. A free tier can do a simple site; a multi-page one like this is easier with a paid tool that can create files.
+- Time: one working session for two rounds, most of it the AI's. Budget an hour of human review.
 - Skills: knowing what you want, and reading the result with a critical eye. No coding.
