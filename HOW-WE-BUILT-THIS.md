@@ -68,6 +68,10 @@ Two lessons from this round:
 - **Say what is working as well as what is not.** "The vibe and content is great" told the AI what to keep. Without it, a rebuild can throw out the good parts.
 - **Feedback about a feeling is fine.** "More like a place to visit" is not a technical instruction, and it did not need to be.
 
+## Round three: a page for the machines
+
+People now ask AI assistants about a course or a museum instead of visiting its website. So the site has a file called `llms.txt`: a plain-text summary written for AI agents, with the key facts, the schedule, a link to every page, and notes on what not to guess (enrollment, tuition, deadlines). It is an emerging convention, not a guarantee that any given assistant reads it, and it has to be kept in step with the pages. If a date changes on the Lineup page, change it in `llms.txt` too.
+
 ## What a human still has to check
 
 This list is the real lesson. None of it can be skipped.

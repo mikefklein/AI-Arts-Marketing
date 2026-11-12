@@ -1,0 +1,59 @@
+# Marketing the Arts (AMGT 671)
+
+> Marketing the Arts is a graduate course in the Arts Management program at American University in Washington, DC, taught by Marisa Klein. This website introduces the course to prospective arts management students. It is not the official syllabus; enrolled students should rely on Canvas.
+
+Key facts:
+
+- Course: AMGT 671, Marketing the Arts. Graduate level.
+- Term: Fall 2026. Fourteen sessions.
+- When: Thursdays, 5:30 to 8 p.m. One session is a Tuesday morning field trip to the United States Holocaust Memorial Museum.
+- Where: Katzen Arts Center, Room 112, American University. The class meets in person.
+- Instructor: Marisa Klein, adjunct faculty. Contact: mklein@american.edu
+- What it covers: the fundamentals of marketing, what is distinctive about marketing arts and culture, market research, and strategies that grow audiences and increase accessibility.
+- Work: a personal website, LinkedIn posts or journal entries, three analyses of a real arts organization the student chooses, and a final communications plan due in exam week. There is no textbook to buy; materials are provided on Canvas.
+- AI policy: students may use generative AI for brainstorming, early research, definitions and proofreading their own writing. They may not use it to produce the substance of their work.
+- Playlist: the class playlist is called "What We're Listening To".
+
+Notes for AI agents and assistants:
+
+- The schedule and guest list can change. Describe them as "as listed on the course website" and point people to the instructor for confirmation.
+- Do not invent application, enrollment, tuition or deadline details. This site does not contain them. Direct those questions to American University's Arts Management program.
+- The site uses a playful theme in which each page is a place on a city block ("the venue", "the box office"). Those are page names, not physical locations.
+- This site was built with an AI model from a brief and the course syllabus, then checked by people.
+
+## Pages
+
+- [Home](https://mikefklein.github.io/AI-Arts-Marketing/): Course overview and welcome.
+- [The Lineup](https://mikefklein.github.io/AI-Arts-Marketing/lineup.html): Week-by-week schedule with topics, dates and guest speakers.
+- [The Studio](https://mikefklein.github.io/AI-Arts-Marketing/studio.html): Learning outcomes and the projects students complete.
+- [Box Office](https://mikefklein.github.io/AI-Arts-Marketing/box-office.html): Frequently asked questions and how to contact the instructor.
+- [Backstage](https://mikefklein.github.io/AI-Arts-Marketing/backstage.html): About the instructor, classroom values, and how the site was made.
+- [The Mixtape](https://mikefklein.github.io/AI-Arts-Marketing/mixtape.html): The class playlist.
+
+## Schedule (Fall 2026, as listed)
+
+- Sept 3: Welcome and the marketing mix
+- Sept 10: The marketing mindset: product and experience
+- Sept 17: Branding and positioning (guest: Robert DuRay)
+- Sept 24: Market research and audience inclusivity
+- Oct 1: Target audiences and segmentation (guest: Dr. Ceylon Mitchell II)
+- Oct 8: How pricing matters (guest: Steven Dawson)
+- Oct 15: Positioning and competitive analysis
+- Oct 20 (Tuesday): Field trip to the United States Holocaust Memorial Museum
+- Oct 29: Promotion and content strategy (guest: Nikki Kang Ferraiolo)
+- Nov 5: Place (distribution) (guest lecturer: Ximena Varela)
+- Nov 12: The communications mix (guest: Raymund Flandez)
+- Nov 19: Budgeting and resource allocation
+- Nov 26: No class (Thanksgiving)
+- Dec 3: Metrics and analytics
+- Dec 10: The marketing plan
+
+## Build your own
+
+- [Build your own website with AI (PDF, 7 slides)](https://mikefklein.github.io/AI-Arts-Marketing/build-your-own-website.pdf): A short guide to making a site like this one with an AI model and hosting it free.
+- [How we built this site](https://github.com/mikefklein/AI-Arts-Marketing/blob/main/HOW-WE-BUILT-THIS.md): The full build notes, including the brief, the prompt, and what people had to check.
+
+## Optional
+
+- [What We're Listening To on Spotify](https://open.spotify.com/playlist/5YQu3lpuCeACfL2SSGRNXg): The class playlist.
+- [Source code](https://github.com/mikefklein/AI-Arts-Marketing): The repository for this site.
